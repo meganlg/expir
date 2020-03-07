@@ -1,2 +1,1 @@
-Hi. Save this change.
-look i just did that :0
+#### This repository is just for me to get familiar with python
