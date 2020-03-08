@@ -20,4 +20,6 @@ statement | section of code that represents a command or action
 assignment | a statement that assigns a value to a variable
 expression | combination of values, operators, and values that represents a single result value
 concatenate | join two operands end-to-end
-comment | info/text in a program that has no effect on execution on 
+comment | info/text in a program that has no effect on execution on
+
+#updated for binder section 2
