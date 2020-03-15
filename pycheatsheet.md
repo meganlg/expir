@@ -8,6 +8,12 @@ an assignment is a statement (?)|
 
 >functions
 
+def funcions:
+```python
+def function1():
+    print_words('hello there')
+```
+
 >definitions/vocab
 
 value | a number or string that can be stored in a variable or computed in an expression
