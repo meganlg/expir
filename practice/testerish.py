@@ -141,3 +141,16 @@ nestdict['second']['five'] = ['cinco']
 print(nestdict)
 nestdict['second']
 nestdict['second']['four']
+
+
+#Conditionals
+def foo(word, adict):
+
+    if word in adict.keys():
+        print('In the if')
+    elif word in adict.values():
+        print('In the elif')
+    else:
+        print('In the else')
+
+    print('The if is over')
