@@ -154,3 +154,81 @@ def foo(word, adict):
         print('In the else')
 
     print('The if is over')
+
+
+
+##############################
+
+#confusion~ :)))))
+#?enumerate and zip
+#?other version
+#?try and except
+alphabet_str = 'abcdefghijklmnopqrstuvwxyz'
+alphabet_lst = list(alphabet_str)
+vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+print(alphabet_lst)
+
+for letter in alphabet_lst:
+    if letter in vowels:
+        letter = letter.upper()
+print(alphabet_lst)
+
+####
+ex=['e']
+ex[0]=ex.upper()
+####
+
+#version1
+for letter in alphabet_lst:
+    if letter in vowels:
+        letter_position = alphabet_lst.index(letter)
+        alphabet_lst[letter_position] = letter.upper()
+print(alphabet_lst)
+
+#version2
+for x in range(0, len(alphabet_lst)):
+    if alphabet_lst[x] in vowels:
+        alphabet_lst[x] = alphabet_lst[x].upper()
+print(alphabet_lst)
+
+#version3
+for (x, letter) in enumerate(alphabet_lst):
+    if letter in vowels:
+        alphabet_lst[x] = letter.upper()
+print(alphabet_lst)
+
+#version4
+alphabet_lst_range = range(len(alphabet_lst))
+for (x, letter) in zip(alphabet_lst_range, alphabet_lst):
+    if letter in vowels:
+        alphabet_lst[x] = letter.upper()
+print(alphabet_lst)
+
+
+#ver1('e')
+#ver2('e')
+#ver3(6,'e')
+#ver4(6,'e')
+
+
+
+for letter in alphabet_lst:
+    if letter in vowels:
+        letter = letter.upper()
+print(alphabet_lst)
+
+####################
+try:
+    for letter in alphabet_lst:
+        if letter in vowels:
+            letter_position = alphabet_lst.index(letter)
+            alphabet_lst[letter_position] = letter.upper()
+except SyntaxError as e:
+    print('had and error')
+
+a = 2
+b = 3
+try:
+    print(a*b)
+except SyntaxError as e:
+    print('had error')

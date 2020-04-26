@@ -12,7 +12,22 @@ def foo(n):
 
 foo(20)
 foo(3)
+foo(4)
 foo(24)
+foo(18)
+
+#other example
+def foo2(n):
+    if n%2==0 and n>20:
+        print('Not Weird')
+    elif  n is even and n in range(2,5):
+        print('Not Weird')
+    elif n in range(6,20):
+        print('Weird')
+    else:
+        print('Weird')
+
+foo2(4)
 
 
 
