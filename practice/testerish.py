@@ -232,3 +232,9 @@ try:
     print(a*b)
 except SyntaxError as e:
     print('had error')
+
+
+####################
+#importing and making packages
+
+exxpackage.py
